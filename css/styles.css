@@ -142,7 +142,8 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -647,6 +648,9 @@ address {
   width: calc(100% / var(--column-project) - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.projects a {
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -716,6 +720,10 @@ a:focus {
   outline-color: #0000002d;
 }
 
+.projects a:focus {
+  outline: none;
+}
+
 .nav-item:hover,
 .nav-item:focus,
 .header-contact:hover,
@@ -758,7 +766,8 @@ a:focus {
   outline: none;
 }
 
-.projects:hover {
+.projects a:hover,
+.projects a:focus {
   box-shadow: 0px 4px 4px 0px var(--shadow-clr);
 }
 
