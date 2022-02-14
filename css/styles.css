@@ -740,6 +740,7 @@ a:focus {
 .social-link-footer:hover,
 .social-link-footer:focus {
   background-color: var(--brand-clr);
+  outline: none;
 }
 
 .client-logo-link:hover,
